@@ -1,0 +1,71 @@
+package com.anyaudit.controllers;
+
+
+import com.anyaudit.models.Assignment;
+import com.anyaudit.models.Milestone;
+import com.anyaudit.service.MilestoneManager;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
+import java.util.*;
+
+@CrossOrigin(origins = "*", maxAge = 3600)
+@RestController
+@Getter
+@Setter
+@RequestMapping("/api/milestone")
+public class MilestoneController {
+    @Autowired
+    private MilestoneManager milestoneManager;
+
+    @GetMapping("/list")
+    public List<Milestone> getAllMilestone() {
+        return milestoneManager.getAllMilestone();
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Milestone> getMilestoneById(@PathVariable(value = "id") Long id) {
+        Milestone milestone = milestoneManager.getMilestoneById(id);
+        return ResponseEntity.ok(milestone);
+    }
+    @PostMapping("/save")
+    public ResponseEntity<Milestone> createMilestone(@Valid @RequestBody Milestone milestone) {
+        Milestone createdMilestone = milestoneManager.createMilestone(milestone);
+        return new ResponseEntity<>(createdMilestone, HttpStatus.CREATED);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<?> updateMilestone(@PathVariable Long id, @RequestBody Milestone updated) {
+        try {
+            Milestone savedMilestone = milestoneManager.updateMilestone(id, updated);
+            return ResponseEntity.ok(savedMilestone);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("An error occurred while updating the assignment: " + e.getMessage());
+        }
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> deleteMilestone(@PathVariable Long id) {
+        milestoneManager.deleteMilestone(id);
+        return ResponseEntity.ok().body("Client with ID " + id + " successfully deleted.");
+    }
+
+    @GetMapping("/findByClientId/{id}")
+    public List<Map<String, Object>> findMilestoneById(@PathVariable("id") Long id) {
+        List<Object[]> milestones = milestoneManager.findMilestoneById(id);
+        List<Map<String, Object>> resultList = new ArrayList<>();
+        for (Object[] milestone : milestones) {
+            Map<String, Object> assignmentMap = new HashMap<>();
+            assignmentMap.put("milestone_id", milestone[0]);
+            assignmentMap.put("milestone_name", milestone[1]);
+            resultList.add(assignmentMap);
+        }
+        return resultList;
+    }
+}

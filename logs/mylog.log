@@ -1,0 +1,56 @@
+2023-05-04 06:44:24.898 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.4.Final
+2023-05-04 06:44:24.907 [main] INFO  com.anyaudit.CampusApplication - Starting CampusApplication using Java 1.8.0_202 on DESKTOP-DKAF44O with PID 12052 (D:\mani\backend-campus\target\classes started by singh in D:\mani\backend-campus)
+2023-05-04 06:44:24.909 [main] INFO  com.anyaudit.CampusApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-04 06:44:27.148 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-04 06:44:27.361 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 198 ms. Found 10 JPA repository interfaces.
+2023-05-04 06:44:28.766 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-05-04 06:44:28.783 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-05-04 06:44:28.785 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-04 06:44:28.785 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-04 06:44:29.166 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-04 06:44:29.167 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4076 ms
+2023-05-04 06:44:29.436 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-04 06:44:29.579 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-05-04 06:44:29.955 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-04 06:44:30.203 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-05-04 06:44:30.459 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-05-04 06:44:30.490 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-05-04 06:44:32.743 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-04 06:44:32.767 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-04 06:44:34.123 [main] WARN  com.anyaudit.util.PropertiesUtils - You have no custom properties file provided in D:\home\ubuntu\.campus.properties.  If you want to override the default properties, please put your values in that file.
+2023-05-04 06:44:34.663 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-04 06:44:35.590 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@432b883, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f09c282, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c6c93f8, org.springframework.security.web.header.HeaderWriterFilter@341c0dfc, org.springframework.web.filter.CorsFilter@560c3758, org.springframework.security.web.authentication.logout.LogoutFilter@16279a5d, com.anyaudit.security.jwt.AuthTokenFilter@2f3a0f37, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a720ae3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fe37d27, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43414b88, org.springframework.security.web.session.SessionManagementFilter@7b55f0a6, org.springframework.security.web.access.ExceptionTranslationFilter@3c1d6ef0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@126e2710]
+2023-05-04 06:44:36.041 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-05-04 06:44:36.078 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-04 06:44:36.099 [main] INFO  com.anyaudit.CampusApplication - Started CampusApplication in 12.466 seconds (JVM running for 14.668)
+2023-05-04 06:44:57.725 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-04 06:44:57.727 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-05-04 06:44:57.739 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-05-04 06:45:04.672 [main] INFO  com.anyaudit.CampusApplication - Starting CampusApplication using Java 1.8.0_202 on DESKTOP-DKAF44O with PID 14828 (D:\mani\backend-campus\target\classes started by singh in D:\mani\backend-campus)
+2023-05-04 06:45:04.672 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.4.Final
+2023-05-04 06:45:04.678 [main] INFO  com.anyaudit.CampusApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-04 06:45:06.379 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-04 06:45:06.539 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 146 ms. Found 10 JPA repository interfaces.
+2023-05-04 06:45:07.502 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-05-04 06:45:07.514 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-05-04 06:45:07.515 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-04 06:45:07.515 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-04 06:45:07.803 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-04 06:45:07.803 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3035 ms
+2023-05-04 06:45:08.129 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-04 06:45:08.194 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-05-04 06:45:08.395 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-04 06:45:08.549 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-05-04 06:45:08.804 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-05-04 06:45:08.821 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-05-04 06:45:10.322 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-04 06:45:10.336 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-04 06:45:11.483 [main] WARN  com.anyaudit.util.PropertiesUtils - You have no custom properties file provided in D:\home\ubuntu\.campus.properties.  If you want to override the default properties, please put your values in that file.
+2023-05-04 06:45:11.641 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-04 06:45:12.792 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@37364634, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3dec79f8, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ffa078d, org.springframework.security.web.header.HeaderWriterFilter@55682482, org.springframework.web.filter.CorsFilter@5bf7f15f, org.springframework.security.web.authentication.logout.LogoutFilter@5d3634c8, com.anyaudit.security.jwt.AuthTokenFilter@8f6b4ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42238078, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49fe0bcd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14b26e90, org.springframework.security.web.session.SessionManagementFilter@6ffc6ea7, org.springframework.security.web.access.ExceptionTranslationFilter@2de7c84a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3dd750ba]
+2023-05-04 06:45:13.196 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-05-04 06:45:13.223 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-04 06:45:13.240 [main] INFO  com.anyaudit.CampusApplication - Started CampusApplication in 9.55 seconds (JVM running for 11.833)
+2023-05-04 06:49:38.361 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-04 06:49:38.364 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-05-04 06:49:38.378 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
